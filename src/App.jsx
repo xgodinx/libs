@@ -16,13 +16,13 @@ function App() {
 
   const onIdle = () => {
     toast.warning("no activity for 5 seconds", {
-      position: "top-center",
+      position: "top-right",
       autoClose: 3000,
     });
 
     setTimeout(() => {
       toast.error("You were kicked", {
-        position: "top-center",
+        position: "top-right",
         autoClose: 4000,
       });
     }, 5000);
@@ -69,7 +69,7 @@ function App() {
         </button>
 
         <div style={{ marginTop: "30px", fontSize: "24px", color: "#f44336" }}>
-          <FaSignOutAlt /> Exit with no activity
+          <FaSignOutAlt /> 5 seconds without activity - kick
         </div>
 
         <ToastContainer />
